@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+/* style.css */
+
+.login-card > h2 {
+    margin: 0 0 12px;
+    font-weight: 600px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+}
+
+.login-card > h3 {
+    margin: 0 0 30px;
+    font-weight: 500px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.38);
+}
+
+.login-form {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+}
+
+.login-card {
+    width: 100%;
+    padding: 70px 30px 44px;
+    border-radius: 24px;
+    background: #ffffffa9;
+    text-align: center;
+}
+
+@media (width >= 500px) {
+    .login-card {
+        margin: 0;
+        width: 400px;
+    }
+}
+
+@keyframes pan {
+    100% { background-position: 15% 50%; }
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background-image: url("bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: pan 2s infinite alternate linear;
+}
+
+@media (width >= 500px) {
+    body {
+        padding: 0;
+    }
+}
+
+.login-form > a {
+    color: #216ce7;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.login-form > input, 
+.login-form > button {
+    width: 100%;
+    height: 50px;
+    padding: 0 16px;
+    border-radius: 8px;
+}
+
+.login-form > input {
+    border: 2px solid #ebebeb;
+}
+
+.login-form > button {
+    width: 100%;
+    height: 56px;
+    border: 0;
+    background:#6499ee;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #f9f9f9;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #216ce7;
+}
+
